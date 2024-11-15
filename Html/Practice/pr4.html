@@ -9,14 +9,86 @@
         legend {
             text-align: center;
         }
+
+        body {
+            text-align: center;
+        }
+
+        .btn {
+            height: 30px;
+            width: 70px;
+            background-color: lightcoral;
+        }
+
+        body {
+            width: 50%;
+        }
     </style>
 </head>
 
 <body>
-    <fieldset>
+    <fieldset style="background-color: lightblue;">
         <legend>
             <h1>Registration Details</h1>
         </legend>
+        <form action="#">
+            <label for="University">
+                <span>University :</span>
+                <input type="text" id="University">
+            </label>
+            <br><br>
+            <label for="Institute">
+                <span>Institute :</span>
+                <input type="text" id="Institute">
+            </label>
+            <br><br>
+            <label for="Branch">
+                <span>Branch :</span>
+                <select>
+                    <option id="Select">--Select--</option>
+                    <option id="Select">Gujarat</option>
+                    <option id="Select">MP</option>
+                    <option id="Select">UP</option>
+                    <option id="Select">Chennai</option>
+                    <option id="Select">Delhi</option>
+                </select>
+            </label>
+            <br><br>
+            <label for="Degree">
+                <span>Degree :</span>
+                <select>
+                    <option id="Select">--Select--</option>
+                    <option id="Select">Computer Engineer </option>
+                    <option id="Select">Civil Engineer</option>
+                    <option id="Select">IT Engineer</option>
+                    <option id="Select">Electrical Engineer</option>
+                </select>
+            </label>
+            <input type="radio" name="id"><label>Pursuing</label>
+            <input type="radio" name="id"><label>Completed</label>
+            <br><br>
+            <label for="Av CPI">
+                <span>Avarage CPI :</span>
+                <input type="text" id="Av CPI">
+                <label for="Upto"></label>
+                <span>Upto :</span>
+                <input type="text" id="Upto">
+                <span>Th Semester</span>
+            </label>
+            <br><br>
+            <label for="ex">
+                <span>Experience :</span>
+                <input type="text" id="ex">
+                <span>Year</span>
+            </label>
+            <br><br>
+            <label for="blog">
+                <span>Your Website Or Blog :</span>
+                <input type="url" id="blog" placeholder="https://www.google.com">
+            </label>
+            <br><br>
+            <button type="submit" class="btn">Register</button>
+        </form>
     </fieldset>
 </body>
 
