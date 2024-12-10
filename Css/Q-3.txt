@@ -1,0 +1,36 @@
+• Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms flex-container and flex-item.
+
+-> Flexbox :- Flexbox flexible layout module that arrange items in rows and columns.
+-> Flexbox follow 1d layout.(Either follow row or a column).
+
+-> Flexbox Feature :-
+-> Flex-start: Packs lines to the start of the container.
+-> Flex-end: Packs lines to the end of the container.
+-> Center: Packs lines to the center of the container.
+-> Space-between: Evenly distributes lines, with the first line at the start of the container and the last line at the -> end
+-> Space-around: Evenly distributes lines with equal space between them
+-> Stretch: The default option, which stretches lines to take up the remaining spac
+
+
+-> Flexbox uses :-
+
+-> Align items: Flexbox can be used to align items of different sizes into rows or columns. 
+-> Change direction: The flex-direction property can be used to change the direction in which the flex items        display. 
+-> Flex-grow: The flex-grow property can be used to help the elements grow and cover up small spaces. 
+-> Align components: The justify-content attribute can be used to align the flex components. 
+
+
+• Question 2: Describe the properties justify-content, align-items, and flex- direction used in Flexbox.
+
+-> Flex-direction :- Row is default value in Flex Direction.
+-> For Row :- row , Row-reverse.
+-> For Column :- column , column-reverse.
+
+-> Justify-content :- Controls the alignment of items on the main axis, which is horizontal for rows and vertical for columns.
+
+-> justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit;
+
+-> Align-items :- Controls the alignment of items on the cross axis, which is vertical for rows and horizontal for columns. 
+
+-> align-items: normal|stretch|positional alignment|flex-start|flex-end|baseline|initial|inherit;
+

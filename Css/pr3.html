@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(10, 12, 12);
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5%;
+            height: 10vh;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin-left: 15px; */
+            padding: 0px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        /* button Section */
+        .btn button {
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-right: 5px;
+            background-color: orange;
+        }
+
+        button:hover {
+            background-color: greenyellow;
+        }
+
+        /* main Section */
+
+        .main-section {
+            display: flex;
+            height: 80vh;
+            justify-content: space-between;
+
+        }
+
+        .section-main-left {
+            background-color: rgb(94, 174, 174);
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-main-right {
+            background-color: rgb(242, 248, 244);
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .section-main-right p {
+            border: 1px solid black;
+            margin-left: 5px;
+        }
+
+        /* footer Section */
+
+        .main-footer {
+            display: flex;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="main">
+                <div class="container">
+                    <h2>Mynavbar</h2>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-section">
+            <div class="section-main-left">
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                    <li>list 4</li>
+                    <li>list 5</li>
+                </ul>
+            </div>
+            <div class="section-main-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rem.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, dolore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, non.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main-footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

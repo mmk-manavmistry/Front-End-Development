@@ -1,0 +1,120 @@
+• Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+Selector :-
+
+-> CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser.
+
+-> Class Selector :-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para">Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
+
+-> Id Selector :-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para">Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
+
+
+• Question 2: Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved?
+
+->Highest Priority is Inline Css than External css and internal css
+
+Inline css > Id Selector > Class Selector >Element Selector.
+
+• Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and disadvantages of each approach.
+
+-> Internal css Example :-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para">Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
+
+-> Inline css Example :-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p style="color:red">Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
+
+->External css Example :-
+
+Index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>
+
+style.css
+        .para {
+            color: red;
+        }
+
+->Inline css  :- Uses Style attribute To write.
+->Internal css :- Uses <style></style> tag to write.
+->External css :- creat .css file and write
+
