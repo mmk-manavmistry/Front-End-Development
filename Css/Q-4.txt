@@ -1,0 +1,41 @@
+• Question 1: Explain the difference between web-safe fonts and custom web fonts.Why might you use a web-safe font over a custom font?
+
+-> Web-safe font :- 
+-> Definition: Pre-installed fonts available on most devices and operating systems.
+-> Examples: Arial, Times New Roman, Helvetica, Verdana, Courier New.
+-> Websafe Font that allow all the operating system as well as all the browser.
+
+-> Custom Web Fonts:-
+-> Definition: Fonts not pre-installed on devices; they are imported from external resources such as Google Fonts  or self-hosted font files.
+-> Examples: Open Sans, Roboto, Lora, Montserrat.
+
+• Question 2: What is the font-family property in CSS? How do you apply a custom GoogleFont to a webpage?
+
+-> Font-family :- The font-family property in CSS is used to specify the typeface or font of text content on a webpage. It allows you to define a list of fonts in order of preference, where the browser will use the first available font.
+-> font-family: font1, font2, generic-family;
+
+-> Using import We can add the font 
+-> Syntax :- @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+-> Font-family :-   font-family: "Open Sans", serif;
+
+
+-> Using Link add font-family
+-> Syntax :- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+-> Font-family :- font-family: "Open Sans", serif;
+
+-> Using Font-face :-
+-> Syntax :- 
+@font-face {
+
+            font-family: "Montserrat";
+            src: url("fonts/Montserrat-Regular.woff2");
+}
+
+
+
+
+
+
+
+
+
