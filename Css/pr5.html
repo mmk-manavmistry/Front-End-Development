@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Card Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+            margin: auto;
+            align-items: center;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateX(10px) translateY(10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        h1 {
+            text-align: center;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sports Inventory</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/519xfr8YW7L.jpg" alt="Ceat Bat">
+            <h2>Ceat Bat</h2>
+            <h3>500 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://syncoshop.com/cdn/shop/products/1_1_10a380cd-8fbc-44c9-a284-8116dc266ee3.png?v=1682153963"
+                alt="Badminton">
+            <h2>Badminton</h2>
+            <h3>300 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51rCXKaVGTL._AC_UF894,1000_QL80_.jpg" alt="Football">
+            <h2>Football</h2>
+            <h3>250 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/14/07/basketball-147794_1280.png" alt="Basketball">
+            <h2>Basketball</h2>
+            <h3>150 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41mdTkEYPlL.jpg" alt="Javelin">
+            <h2>Javelin</h2>
+            <h3>350 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://stryderbikes.com/cdn/shop/files/ZeetaPlus27TMatteGrey.jpg?v=1687341453" alt="Bicycle">
+            <h2>Bicycle</h2>
+            <h3>1150 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/helmet/a/x/f/sbh-34-ref-sports-isi-certified-full-face-bike-helmet-with-inner-original-imagtnpf4e5p4pdz.jpeg?q=90&crop=false"
+                alt="Helmet">
+            <h2>Helmet</h2>
+            <h3>150 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR99EadtxhV601VWmpX5RSJ2IMFJ7BuSttsjw&s"
+                alt="Golf Stick">
+            <h2>Golf Stick</h2>
+            <h3>250 &#8377;</h3>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZA-Bob7G0rWMVxGdhOrw5T1XzsHF2zmNxQ&s"
+                alt="Swim Goggles">
+            <h2>Swim Goggles</h2>
+            <h3>125 &#8377;</h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+• Question 1: Difference b/w HTML & HTML5?
+
+-> Html :- Audio video tag are not the part of the Html.
+-> Html5 :- Audio video tag are the part of the Html5.
+
+-> Html :- It Is a Less Mobile Friendly.
+-> Html5 :- It is a More Mobile Friendly.
+
+-> Html :- Doctype declaration and character encoding are very too long.
+-> Html5 :- Doctype declaration and character encoding are short and simple.
+
+• Question 2: What are the additional tags used in HTML5?
+
+-> <article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<audio>,<video>,<date>,<track>,       <source>,<embed>
