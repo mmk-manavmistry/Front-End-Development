@@ -1,0 +1,27 @@
+.slide img{
+    height: 90vh;
+}
+.home-page{
+    width: 100%;
+}
+.padding{
+    padding-block:5%;
+    padding-inline: 7%;
+}
+.card .br{
+    border-radius: 50%;
+}
+.pa-1{
+    padding-block: 40px;
+    padding-inline: 7%;
+}
+.pa-2{
+    padding-block: 2%;
+    padding-inline: 7%;
+}
+@media (max-width: 320px) {
+    .home-page{
+        width: 100%;
+    }
+    
+}
