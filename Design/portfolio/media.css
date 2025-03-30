@@ -1,0 +1,421 @@
+/* 
+576px
+768px
+992px
+1200px
+1400px
+
+use rule 
+@media screen {}
+
+max-width 576px   mobile screen 
+min-width 576px   mobile screen = landscape mode
+min-width 768px   tablet screen 
+min-width 992px   mini leptop 
+min-width 1200px  normal screen large screen 
+min-width 1400px  extra large  */
+@media (max-width: 576px){
+    .navlinks li{
+        display: none;
+    }
+    .links .btn{
+        display: none;
+    }
+    .links .search{
+        display: none;
+    }
+    .links .bar{
+        display: block;
+        color: white;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px 8% 0 8%;
+    }
+    nav{
+        padding: 28px 8%;
+    }
+    .left h1{
+        margin-top: 70px;
+        color: white;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 1.2rem;
+    }
+    .left h2{
+        color: white;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    } 
+    .left p{
+        color: white;
+        line-height: 1.6rem;
+        text-align: justify;
+        font-size: 1rem;
+    }  
+    .hero .right img {
+        width: 250px;
+        max-width: 100%; 
+        height: auto; 
+    }
+    .bttn .btn{
+        padding: 10px 35px;
+        border-radius: 10px;
+    }
+    .bttn .btn1{
+        padding:10px 35px;
+        border-radius: 10px;
+    }
+    /* about section */
+    .ab-left img{
+        max-width: 100%;
+        width: 550px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+        overflow: auto;
+    }
+    
+    .ab-right{
+        margin-top: 10px;
+        flex-basis: 50%;
+    }
+    .ab-right h1{
+        line-height: 48px;
+        font-size: 30px;
+        padding-bottom: 24px;
+        letter-spacing: 1px;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .info .right-1{
+        padding-left: 0px;
+    } 
+    .info2{
+        padding-top: 0px;
+    }
+    .btn2 .bt{
+        padding:10px 35px;
+        border-radius: 10px;
+    }
+    .btn2 .bt1{
+        padding:10px 35px;
+        border-radius: 10px;
+    }
+    /* service */
+    .box-container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    /* skill */
+    .skill{
+        flex-direction: column;
+    }
+    .skill .sk-right{
+        margin-top: 50px;
+    }
+    /* story */
+    .story .story-box{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    /* foot */
+    .address{
+        flex-direction: column;
+    }
+    .copy{
+        text-align: center;
+    }
+    .social{
+        display: block;
+        margin: 0px auto;
+    }
+      
+    .ad .social i {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease; 
+    }
+
+    .ad .social i:hover {
+        color:  #007e6a; 
+        transform: scale(1.2); 
+    } 
+    
+}
+@media (min-width: 576px){
+    nav{
+        padding: 28px 12%;
+    }
+    .navlinks li{
+        display: none;
+    }
+    .links .btn{
+        display: none;
+    }
+    .links .search{
+        display: none;
+    }
+    .links .bar{
+        display: block;
+        color: white;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    nav{
+        padding: 28px 8%;
+    }
+    header{
+        padding: 50px 8% 0 8%;
+        overflow: auto;
+    }
+    .left h1{
+        margin-top: 80px;
+        color: white;
+        font-size: 2.3rem;
+        letter-spacing: 2.1px;
+        margin-bottom: 1.2rem;
+    }
+    .left h2{
+        color: white;
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+    .left p{
+        color: white;
+        line-height: 1.9rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+    .hero .right img {
+        width: 250px;
+        max-width: 100%; 
+        height: auto; 
+    }
+    /* about section */
+    .about{
+        flex-direction: column;
+    }
+    .ab-right{
+        margin-top: 50px;
+        flex-basis: 50%;
+    }
+    .ab-right img{
+        display: block;
+        margin: 0px auto;
+    }
+    /* skill */
+    .skill{
+        flex-direction: column;
+    }
+    .skill .sk-right{
+        margin-top: 50px;
+    }
+     .story .story-box {
+        grid-template-columns: repeat(2, minmax(200px, auto));
+        gap: 20px;
+    }
+    /* foot */
+    .social{
+        display: block;
+        margin: 0px auto;
+    }
+    .copy{ 
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .ad .social i {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease; 
+    }
+
+    .ad .social i:hover {
+        color:  #007e6a; 
+        transform: scale(1.2); 
+} 
+
+}
+@media (min-width: 768px){
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        padding: 130px 8% 0 8%;
+        overflow: auto;
+    }
+    /* about section */
+    .about{
+        flex-direction: column;
+        overflow: auto;
+    }
+    .ab-left img{
+        max-width: 100%;
+        width: 450px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+    /* skill */
+    .skill{
+        flex-direction: column;
+    }
+    .skill .sk-right{
+        margin-top: 50px;
+    }
+   .sk-left img{
+        max-width: 100%;
+        width: 450px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+/* story */
+    .story .story-box {
+        grid-template-columns: repeat(3, minmax(200px, auto));
+        gap: 20px;
+    }
+    /* foot */
+    .ad{
+        flex-direction: column;
+    }
+    .copy{
+        text-align: center;
+    }
+
+}
+@media (min-width: 992px){
+    nav{
+        padding: 28px 8%;
+    }
+    .navlinks li{
+        display: block;
+    }
+    .links .btn{
+        display: block;
+    }
+    .links .search{
+        display: block;
+    }
+    .links .bar{
+        display: none;
+        color: white;
+    }
+    .hero{
+        flex-direction: row;
+    }
+    .hero .right img {
+        width: 390px;
+        max-width: 100%; 
+        height: auto; 
+    }
+    /* about section */
+    .ab-left img{
+        max-width: 100%;
+        width: 350px;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .ab-right{
+        margin-top: 70px;
+        flex-basis: 60%;
+    }
+    .about{
+        flex-direction: row;
+        overflow: auto;
+    }
+    /* skill */
+    .skill{
+        flex-direction: row;
+    }
+    .skill .sk-right{
+        margin-top: 50px;
+    }
+    .sk-left img{
+        max-width: 100%;
+        width: 350px;
+        border-radius: 10px;
+        height: auto;
+        margin: 0 auto;
+    }
+/* foot */
+    .ad {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        color: white;
+        flex-wrap: wrap; 
+        gap: 10px; 
+    }
+   
+    .ad .copy p {
+        font-size: 0.9rem;
+        color: #ccc;
+        margin: 0;
+    }
+
+    .ad .social {
+        display: flex;
+        gap: 20px; 
+    }
+
+    .ad .social i {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease; 
+    }
+
+    .ad .social i:hover {
+        color:  #007e6a; 
+        transform: scale(1.2); 
+    } 
+
+    
+}
+@media (min-width: 1200px){
+    .hero{
+        flex-direction: row;
+    }
+    header{
+        padding: 130px 8% 0 8%;
+        overflow: auto;
+    }
+    /* about section */
+    .ab-left img{
+        max-width: 100%;
+        width: 450px;
+        border-radius: 10px;
+    }
+    .ab-right{
+        margin-top: 150px;
+        flex-basis: 50%;
+    }   
+    /* skill */
+    .skill{
+        flex-direction: row;
+    }
+    .skill .sk-right{
+        margin-top: 50px;
+    }
+    .sk-left img{
+        max-width: 100%;
+        width: 500px;
+        border-radius: 10px;
+    }
+}
+    @media (min-width: 1400px){
+    .hero{
+        flex-direction: row;
+    }
+}

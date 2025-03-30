@@ -1,0 +1,302 @@
+@media (max-width: 320px){
+    .navlinks i{
+        display: block;
+    }
+    .navlinks .links{
+        display: none;
+    }
+    .navlinks .btn{
+        display: none;
+    }
+    /* hero section */
+    .hero .text{
+        flex-basis: 100%;
+    }
+    .text p{
+        text-align: justify;
+    }
+    /* date */
+    .dateborder{
+        padding: 10px;
+    }
+    .main p{
+        color: black;
+        font-family: sans-serif;
+        line-height: 2.5rem;
+        width: 100%;
+    }
+    .input-field{
+        gap: 10px;
+    }
+    .input-field input{
+        width: 100%;
+    }
+    .input-field .sub{
+        width: 100%;
+    }
+    /* destination */
+    .text-section h1{
+        font-size: 2.1rem;
+    }
+    .text-section p{
+        font-size: 1rem;
+    }
+    .place h2{
+        text-align: center;
+    } 
+    .destination{
+        overflow: auto;
+        padding-inline: 2%;
+    }
+    .destination .place-container{
+        padding-inline: 2%;
+        grid-template-columns: 2fr;
+    }
+    /* book */
+    .book{
+        overflow: auto;
+    }
+    .t-book{
+        padding-top: 15px;
+    }
+    .book h1{
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+    .t-book p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* explore */
+    .explore .exp{
+        flex-direction: column;
+    }
+    .exp .img{
+        flex-basis: 100%;
+    }
+    .explore .exp{
+        padding-inline: 3%;
+        gap: 5px;
+    }
+    .ex-te a{
+        display: block;
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+    /* foot */
+    .foot{
+        display: block;
+        flex-direction: column;
+        padding-inline: 1%;
+    }
+    .foot h1{
+        padding-top: 15px;
+    }
+    .subcribe p{
+        text-align: justify;
+    }
+}
+@media (min-width: 320px) {
+    .navlinks i{
+        display: block;
+    }
+    .navlinks .links{
+        display: none;
+    }
+    .navlinks .btn{
+        display: none;
+    }
+    /* hero-section */
+    .hero .text{
+        flex-basis: 100%;
+    }
+    .text p{
+        text-align: justify;
+    }
+    /* date */
+    .dateborder{
+        padding: 10px;
+    }
+    .input-field input{
+        width: 100%;
+    }
+    .input-field .sub{
+        width: 100%;
+    }
+    /* destination */
+    .place img{
+        width: 100%;
+    }
+    .destination .place-container{
+        padding-inline: 2%;
+    }
+    .destination{
+        padding-inline: 2%;
+    }
+    /* book */
+    .book{
+        overflow: auto;
+    }
+    .book h1{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 7px;
+    }
+    .book p{
+        text-align: center;
+        line-height: 1.3rem;
+    }
+    /* explore */
+    .explore .exp{
+        flex-direction: column;
+    }
+    .explore .exp{
+        padding-inline: 7%;
+        gap: 4px;
+    }
+    /* foot */
+    .foot{
+        padding-inline: 2%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    
+}
+@media (min-width: 576px) {
+    /* hero-section */
+    .hero .text{
+        flex-basis: 100%;
+    }
+    .text p{
+        text-align: justify;
+    }
+    /* date */
+    .input-field input{
+        padding: 10px;
+        width: 150px;
+    }
+    .input-field .sub{
+         padding: 10px 30px;
+         width: 150px;
+    }
+    .place img{
+        width:100%;
+    }
+    .destination .place-container{
+        padding-inline: 9%;
+    }
+    .destination{
+        padding-inline: 9%;
+    }
+    /* book */
+    .book{
+        overflow: auto;
+    }
+    .t-book{
+        padding-top: 50px;
+    }
+    .book h1{
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .t-book p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* explore */
+    .explore .exp{
+        flex-direction: column;
+    }
+    .explore .exp{
+        padding-inline: 11%;
+        gap: 4px;
+        margin: 0 auto;
+    }
+    .exp .img{
+        display: block;
+        margin: 0px auto;
+    }
+
+
+}
+@media (min-width: 768px) {
+    /* hero-section */
+    .hero .text{
+        flex-basis: 70%;
+    }
+    .text p{
+        text-align: justify;
+    }
+    /* book */
+    .t-book{
+        padding-top: 50px;
+    }
+    .book h1{
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .t-book p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* explore */
+    .explore .exp{
+        flex-direction: column;
+    }
+    .exp .ex-te{
+        padding-top: 10px;
+    }
+
+}
+@media (min-width: 992px) {
+    .navlinks i{
+        display: none;
+    }
+    .navlinks .links{
+        display: block; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navlinks .btn{
+        display: block;
+    }
+    .hero .text{
+        flex-basis: 60%;
+    }
+    /* book */
+    .t-book{
+        padding-top: 150px;
+    }
+    /* explore */
+    .explore .exp{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .exp .ex-te{
+        padding-top: 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .hero .text{
+        flex-basis: 55%;
+    }
+    .explore .exp{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .exp .ex-te{
+        padding-top: 90px;
+    }
+    .foot{
+        padding-inline: 10%;
+    }
+}
+@media (min-width: 1200px){
+    
+}
