@@ -1,0 +1,101 @@
+• Question 1: What is the DOM (Document Object Model) in JavaScript? How does JavaScript interact with the DOM? 
+-> The Document Object Model (DOM) is a programming interface provided by the browser that represents an HTML or XML document as a tree-like structure.Each element (e.g., <div>, <h1>, <p>) in the document is represented as a node in this tree.
+-> Using JavaScript, you can access, modify, and manipulate these elements dynamically.
+
+Example :- 
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>DOM Example</title>
+    </head>
+    <body>
+        <h1 id="title">Hello, DOM!</h1>
+        <p>This is a paragraph.</p>
+    </body>
+    </html>
+
+-> Tree :-
+    Document
+    └── html
+        ├── head
+        │   └── title
+        └── body
+                ├── h1 (id="title")
+                └── p
+
+
+
+• Question 2: Explain the methods getElementById(), getElementsByClassName(), and querySelector() used to select elements from the DOM.
+-> getElementById :- This method selects a single HTML element using its id attribute.IDs must be unique in an HTML document.
+-> Example :- 
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>getElementById Example</title>
+        </head>
+        <body>
+          <h1 id="heading">Welcome to JavaScript!</h1>
+
+          <script>
+            // Select and modify element by ID
+            const heading = document.getElementById('heading');
+            heading.textContent = "Hello from getElementById!";
+            heading.style.color = "blue";
+          </script>
+        </body>
+        </html>
+
+-> getElementsByClassName :- Selects all elements with a specified class name.Returns a live HTMLCollection (like an array but without array methods).
+-> Example :- 
+        <!DOCTYPE html>
+        <html>
+        <head>
+         <title>getElementsByClassName Example</title>
+        </head>
+        <body>
+          <p class="text">Paragraph 1</p>
+          <p class="text">Paragraph 2</p>
+          <p class="text">Paragraph 3</p>
+        
+          <script>
+            const paragraphs = document.getElementsByClassName('text');
+            
+            // Changing color for all paragraphs
+           for (let i = 0; i < paragraphs.length; i++) {
+             paragraphs[i].style.color = "green";
+           }
+          </script>
+        </body>
+        </html>
+
+-> querySelector :- Selects the first matching element using CSS selectors.Can be used with IDs, classes, tags, or even complex CSS selectors.
+
+-> Example :-
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>querySelector Example</title>
+        </head>
+        <body>
+          <h1 id="mainTitle">Main Title</h1>
+         <h1 class="subTitle">Subtitle 1</h1>
+         <h1 class="subTitle">Subtitle 2</h1>
+
+        <script>
+            // Select using ID
+            const title = document.querySelector('#mainTitle');
+            title.style.color = "blue";
+
+           // Select using Class (first match)
+           const sub = document.querySelector('.subTitle');
+            sub.style.color = "red";
+        </script>
+        </body>
+        </html>
+
+
+
+
+
+
+

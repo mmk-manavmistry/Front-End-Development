@@ -1,0 +1,23 @@
+<!-- • Write a program that changes the background color of a webpage after 5 seconds using setTimeout(). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+
+<body>
+    <h2>Wait 5 seconds for the background color to change!</h2>
+
+    <script>
+        function changeBackground() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        setTimeout(changeBackground, 5000);
+    </script>
+</body>
+
+</html>

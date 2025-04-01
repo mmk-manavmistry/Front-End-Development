@@ -1,0 +1,49 @@
+• Question 1: What is an array in JavaScript? How do you declare and initialize an array?
+-> What is an array in JavaScript? :- An array in JavaScript is a special type of object that is used to store multiple values in a single variable.
+-> Arrays can hold different types of data, including strings, numbers, objects, and even other arrays.
+
+You can create arrays using :-
+-> Using Square Brackets 
+-> Using the Array Constructor
+
+-> Using Square Brackets 
+let fruits = ["Apple", "Banana", "Orange"];
+let numbers = new Array(10, 20, 30);
+
+let colors = ["Red", "Green", "Blue"];
+console.log(colors[0]); // Output: Red
+console.log(colors[2]); // Output: Blue
+
+• Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays.
+-> Push() Method :- Purpose: Adds one or more elements to the end of an array.
+-> Example :- 
+    let fruits = ["Apple", "Banana"];
+    fruits.push("Orange", "Mango");
+
+    console.log(fruits); // Output: ["Apple", "Banana", "Orange", "Mango"]
+    console.log(fruits.length); // Output: 4
+
+-> pop() Method :- Purpose: Removes the last element from an array.
+-> Example :-
+    let colors = ["Red", "Green", "Blue"];
+    let removedColor = colors.pop();
+    console.log(colors); // Output: ["Red", "Green"]
+    console.log(removedColor); // Output: Blue
+
+-> Shift() Method :- Purpose: Removes the first element from an array.
+-> Example :-
+    let animals = ["Lion", "Tiger", "Elephant"];
+    let removedAnimal = animals.shift();
+
+    console.log(animals); // Output: ["Tiger", "Elephant"]
+    console.log(removedAnimal); // Output: Lion
+
+-> unshift() Method :- Purpose: Adds one or more elements to the beginning of an array.
+-> Example :-
+    let numbers = [2, 3, 4];
+    numbers.unshift(0, 1);
+    console.log(numbers); // Output: [0, 1, 2, 3, 4]
+
+
+
+

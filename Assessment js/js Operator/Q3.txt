@@ -1,0 +1,61 @@
+• Question 1: What are the different types of operators in JavaScript? Explain with examples.
+• Arithmetic operators
+• Assignment operators
+• Comparison operators
+• Logical operators
+
+-> What is operator :- operators are special symbols used to perform operations on variables and values. They are classified into different categories based on their functionality.
+
+-> Arithmetic operator :- 
+    Example of Arithmetic Operators
+
+    +	Addition	10 + 5	15
+    -	Subtraction	10 - 5	5
+    *	Multiplication	10 * 5	50
+    /	Division	10 / 2	5
+    %	Modulus (Remainder)	10 % 3	1
+    ++	Increment (Add 1)	let a = 5; a++	6
+    --	Decrement (Subtract 1)	let b = 5; b--	4
+
+-> Assignment Operators :-
+
+    =	Assignment	x = 10	10
+    +=	Addition and Assignment	x += 5	15
+    -=	Subtraction and Assignment	x -= 3	12
+    *=	Multiplication and Assignment	x *= 2	24
+    /=	Division and Assignment	x /= 4	6
+    %=	Modulus and Assignment	x %= 5	1
+
+-> Comparison Operators :-
+    ==	Equal (Checks only value)	10 == "10"	true
+    ===	Strict Equal (Checks value and type)	10 === "10"	false
+    !=	Not Equal	10 != 5	true
+    !==	Strict Not Equal	10 !== "10"	true
+    >	Greater Than	10 > 5	true
+    <	Less Than	10 < 20	true
+    >=	Greater Than or Equal	10 >= 10	true
+    <=	Less Than or Equal	5 <= 3	false
+
+-> Logical Operator :-
+    &&	Logical AND (Both must be true)	true && false	false
+    `		`	Logical OR (At least one true)
+    !	Logical NOT (Reverses the value)	!true	false
+
+
+• Question 2: What is the difference between == and === in JavaScript?
+-> == (Equality Operator) :- Also called the Loose Equality Operator.Only compares values and performs type coercion (converts data types if necessary).
+
+-> console.log(5 == "5");      // true (string "5" is converted to number 5)
+-> console.log(true == 1);     // true (true is converted to number 1)
+-> console.log(null == undefined); // true (special case)
+
+-> === (Strict Equality Operator) :- Compares both values and their data types without converting them.Returns true only if both value and type match.
+
+-> console.log(5 === "5");      // false (different data types)
+-> console.log(true === 1);     // false (true is boolean, 1 is number)
+-> console.log(null === undefined); // false (different data types)
+-> console.log(10 === 10);      // true (same value and type)
+
+
+
+

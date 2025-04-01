@@ -1,0 +1,107 @@
+• Question 1: What are variables in JavaScript? How do you declare a variable using var, let, and const?
+-> What are variables in JavaScript? :- variables are used to store data values that can be used and manipulated in the program. Variables act as containers that hold information, like numbers, text, or objects.
+
+-> var Declare :- 
+
+-> Program :- 
+->         var name = "manav";
+->         console.log(name); // Output: manav
+
+-> let Declare :- 
+
+-> Program :- 
+->         let name = "manav";
+->         console.log(name); // Output: manav
+
+-> Const Declare :- 
+
+-> Program :- 
+->         const name = "manav";
+->         console.log(name); // Output: manav
+
+var :- Function scope & reassignment - yes & redeclaration - yes
+let :- block scope & reassignment - yes & redeclaration - no
+const :- block scope & reassignment - no & redeclaration - yes
+
+
+
+• Question 2: Explain the different data types in JavaScript. Provide examples for each.
+-> Data types in Javascript :- primitive(Immutable) & Non primitive(Mutable)
+
+-> Primitive Datatypes :- 
+
+-> Number :-
+            let age = 25;        // Integer
+            let price = 99.99;   // Float
+            console.log(typeof age);   // Output: number
+            console.log(typeof price); // Output: number
+
+-> String :-
+            let name = "manav";
+            let message = 'Hello, World!';
+            let greeting = `Welcome, ${name}`; // Template Literal
+            console.log(greeting); // Output: Welcome, manav
+
+-> Boolean :-
+            let isAdult = true;
+            let isMinor = false;
+            console.log(isAdult); // Output: true
+            console.log(typeof isMinor); // Output: boolean
+
+-> Undefined :- 
+            let x;
+            console.log(x); // Output: undefined
+            console.log(typeof x); // Output: undefined
+
+-> Null :-
+            let user = null;
+            console.log(user); // Output: null
+            console.log(typeof user); // Output: object
+
+-> Symbol (ES6) :-
+            const symbol1 = Symbol('id');
+            const symbol2 = Symbol('id');
+            console.log(symbol1 === symbol2); // Output: false (Each Symbol is unique)
+
+-> BigInt (ES11) :-
+            let bigNumber = 900719925474099123456789n; // 'n' denotes BigInt
+            console.log(typeof bigNumber); // Output: bigint
+
+-> Non-Primitive Datatypes :- 
+
+-> Object :- 
+    let person = {
+            name: "Alice",
+            age: 30,
+            isAdmin: true
+    };
+    console.log(person.name); // Output: Alice
+    console.log(typeof person); // Output: object
+
+-> Array :-
+        let colors = ["red", "green", "blue"];
+        console.log(colors[0]); // Output: red
+        console.log(typeof colors); // Output: object
+
+-> Function :-
+        function greet(name) {
+            return `Hello, ${name}`;
+        }   
+        console.log(greet("manav")); // Output: Hello, manav
+        console.log(typeof greet); // Output: function
+
+-> Date :-
+        let currentDate = new Date();
+        console.log(currentDate); // Output: Current date and time
+        console.log(typeof currentDate); // Output: object
+
+
+ 
+• Question 3: What is the difference between undefined and null in JavaScript?
+
+-> undefined :- It means a variable has been declared but not assigned a value.	undefined is a primitive type.	
+-> Null :- It represents an intentional absence of any value.null is an object.
+
+-> undefined == null // true (loose comparison)	
+-> undefined === null // false (strict comparison)
+

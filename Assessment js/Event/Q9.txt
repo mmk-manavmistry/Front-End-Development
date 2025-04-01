@@ -1,0 +1,68 @@
+• Question 1: What are JavaScript events? Explain the role of event listeners.
+-> ✅ What are JavaScript Events? :- Events are actions or occurrences that happen in the browser, usually as a result of user interactions.
+-> Examples include clicking a button, hovering over an image, typing in a text box, or submitting a form.
+-> JavaScript uses these events to make web pages interactive and responsive.
+
+-> Common Examples of Events:
+-> click → When a user clicks on an element.
+-> mouseover → When a user hovers over an element.
+-> keydown → When a key is pressed on the keyboard.
+-> submit → When a form is submitted.
+-> load → When a webpage finishes loading.
+
+-> An Event Listener is a method in JavaScript that listens for an event and executes a function when the event occurs.
+-> It allows you to add interactivity to your website.
+-> You can add event listeners to HTML elements using JavaScript.
+
+-> Syntax :- element.addEventListener(event, functionName);
+-> Example :-
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Event Listener Example</title>
+        </head>
+        <body>
+            <button id="myButton">Click Me</button>
+            <p id="message"></p>
+
+        <script>
+            const button = document.getElementById('myButton');
+            const message = document.getElementById('message');
+
+            // Adding a click event listener
+            button.addEventListener('click', function() {
+                message.textContent = "Button Clicked!";
+            });
+        </script>
+        </body>
+        </html>
+
+• Question 2: How does the addEventListener() method work in JavaScript? Provide an example.
+-> Example :- 
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Event Listener Example</title>
+        </head>
+        <body>
+            <button id="myButton">Click Me</button>
+            <p id="message"></p>
+
+        <script>
+            const button = document.getElementById('myButton');
+            const message = document.getElementById('message');
+
+            // Adding a click event listener
+            button.addEventListener('click', function() {
+                message.textContent = "Button Clicked!";
+            });
+        </script>
+        </body>
+        </html>
