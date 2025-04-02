@@ -19,6 +19,18 @@
     padding-block: 2%;
     padding-inline: 7%;
 }
+.navbar .form-control {
+    color: white; 
+}
+
+.navbar .form-control::placeholder {
+    color: white; 
+    opacity: 1;
+}
+.btn1{
+    background-color: lightgrey;
+    color: black;
+}
 @media (max-width: 320px) {
     .home-page{
         width: 100%;
